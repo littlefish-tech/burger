@@ -53,16 +53,18 @@ var orm = {
     },
     create: function(table, cols, vals, cb) {
         var queryString = "INSERT INTO " +table;
-
+ 
         queryString += " (";
         queryString += cols.toString();
-        querystring += ") ";
+        //console.log("this is ", queryString);
+        queryString += ") ";
+        queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
 
-        console.log(queryString);
+     console.log("this is ", queryString);
 
-        connection.query(queryString, vals, function(err, result) {
+        connection.query(queryString, function(err, result) {
             if(err){
                 throw err;
             }

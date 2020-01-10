@@ -18,12 +18,11 @@ router.get("/", function(req, res){
 });
 
 router.post("/api/burgers", function(req, res){
-    burger.create([
-        "burger_name", "devoured"
-    ], [
-        req.body.burger_name, req.body.devoured
-    ], function(result){
-        res.json({id: resule.indertID});
+    burger.create(
+        req.body.burger_name
+       
+    , function(result){
+        res.json({id: result.insertID});
             //send back the ID of the new quote
          
     });
@@ -49,7 +48,7 @@ router.delete("/api/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id;
 
     burger.delete(condition, function(result){
-        if (resulr.affectedRows == 0) {
+        if (result.affectedRows == 0) {
             //If no rows were chnaged, then the ID must not exist, so 404
             return res.status(404).end();
         } else{
