@@ -1,22 +1,22 @@
-<div class = "topContainer">
-<ul class = "eatBurger">
+<div class = "container">
+<div class = "eatBurger">
 {{#each burgers}}
     {{#unless devoured}}
         {{> burgers/burger-block devoured=true}}
     {{/unless}}
 {{/each}}
-</ul>
-
-<ul class = "devBurger">
-    {{#each burgers}}
-        {{#if devoured}}
-            {{> burgers/burger-block devoure=true}}
-        {{/if}}
-    {{/each}}
-</ul>
 </div>
 
-<div class = "bottomContainer">
+<div class = "devBurger">
+    {{#each burgers}}
+        {{#if devoured}}
+            {{> burgers/burger-block devoure=1}}
+        {{/if}}
+    {{/each}}
+</div>
+</div>
+
+<div class = "container">
 <form class = "create-form">
     <div class = "form-group">
         <label for =  "bur"></label>
