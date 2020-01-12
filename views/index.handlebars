@@ -1,23 +1,24 @@
 <div class = "container">
-<div class = "eatBurger">
-{{#each burgers}}
-    {{#unless devoured}}
+<div class="row">
+    <div class="eatBurger col-4">
+        {{#each burgers}}
+        {{#unless devoured}}
         {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-{{/each}}
-</div>
-
-<div class = "devBurger">
+        {{/unless}}
+        {{/each}}
+    </div>
+    <img src="https://previews.123rf.com/images/pixdesign123/pixdesign1231508/pixdesign123150800804/43965910-3d-rendered-illustration-of-burger-cartoon-character.jpg"
+        alt="Burger Image" class="col-4">
+<div class="devBurger col-4">
     {{#each burgers}}
-        {{#if devoured}}
-            {{> burgers/burger-block devoure=1}}
-        {{/if}}
+    {{#if devoured}}
+    {{> burgers/burger-block devoure=1}}
+    {{/if}}
     {{/each}}
 </div>
 </div>
 
-<div class = "container">
-<form class = "create-form">
+<form class = "create-form" align="center">
     <div class = "form-group">
         <label for =  "bur"></label>
         <input type = "text" id = "bur" name = "burger_name">

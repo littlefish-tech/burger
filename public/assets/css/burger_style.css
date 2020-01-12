@@ -5,3 +5,23 @@
 .devBurger {
     float: right;
 }
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.eatBurger {
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+img {
+    padding-left: 75px;
+    padding-right: 75px;;
+}
+.devBurger {
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 30px;
+}
