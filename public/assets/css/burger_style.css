@@ -1,22 +1,22 @@
-.eatBurger {
+/* .eatBurger {
     float: left;
 }
 
 .devBurger {
     float: right;
-}
+} */
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
 }
 
-.eatBurger {
+/* .eatBurger {
     padding-left: 100px;
     padding-right: 50px;
-    padding-top: 30px;
-}
-img {
+    padding-top: 30px; */
+/* } */
+/* img {
     padding-left: 75px;
     padding-right: 75px;;
 }
@@ -24,4 +24,22 @@ img {
     padding-left: 50px;
     padding-right: 100px;
     padding-top: 30px;
+} */
+
+.inset {
+    margin: 5px;
+    border-radius: 25px;
+    background: orange;
+    padding: 7px;
+    width: 230px;
+    height: 37px;
+    font-size: 12px;
 }
+.devButton {
+    margin-right: 5px;
+    height: 25px;
+    width: 70px;
+    font-size: 9px;;
+    float: right;
+  }
+

@@ -32,7 +32,9 @@ $(function() {
         devoured: 0
         //devoured: $("[name=devoured]:checked").val().trim()
       };
-  
+  if($("#bur").val() === ""){
+    alert("You must type a Burger's name")
+  }else{
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
@@ -42,9 +44,8 @@ $(function() {
           console.log("created new burger");
           // Reload the page to get the updated list
           location.reload();
-        }
-      );
+        });
+      }
     });
-  
   });
   

@@ -1,9 +1,8 @@
-<div>
-	{{name}}
+<div class = "inset">
 
-	<button class="change-devoure" data-id="{{id}}" data-newdevoure="{{devoure}}">
-        {{#if devoure}}{{burger_name}}{{else}}Devoure Me{{/if}}
-	</button>
+
+	<div class="change-devoure" data-id="{{id}}" data-newdevoure="{{devoure}}">{{id}}. {{burger_name}}{{#if devoure}}{{else}}<button class = "devButton">Devoure it!</button>{{/if}}
+	</div>
 
 	{{!-- <button class="delete-burger" data-id="{{this.id}}">DELETE!</button> --}}
 
