@@ -33,8 +33,8 @@ function objToSql(ob) {
 
             //e.g. {name: "Lane Del Grey"} => ["name='Lana Del Grey'"]
             //e.g. {devoured: true} => ["devoured = true"]
-        }
-        arr.push(key + "=" + value);
+            arr.push(key + "=" + value);
+        } 
     }
     //translate array of strings to a single comma-separated string
     return arr.toString();
@@ -72,8 +72,9 @@ var orm = {
         })
     },
 
-    //An example of objColVals would be {name: partner, sleepy: true}
-    update: function(table, objColVals, condition,cb) {
+    //An example of objColVals would be {name: burger_name, devoured: true}
+    update: function(table, objColVals, condition, cb) {
+        console.log("&&&&&&&&&&&&&&&", objColVals)
         var queryString = "UPDATE " + table;
 
         queryString += " SET ";
