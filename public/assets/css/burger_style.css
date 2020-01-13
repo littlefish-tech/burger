@@ -29,17 +29,22 @@ img {
 .inset {
     margin: 5px;
     border-radius: 25px;
-    background: orange;
+    background: #F29F8F;
     padding: 7px;
     width: 230px;
     height: 37px;
     font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .devButton {
     margin-right: 5px;
-    height: 25px;
+    height: 23px;
     width: 70px;
     font-size: 9px;;
     float: right;
   }
 
+.container {
+    margin-top: 20px;;
+}
+  
